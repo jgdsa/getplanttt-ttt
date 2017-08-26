@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/web.Master" AutoEventWireup="true" CodeBehind="subweb.master.cs" Inherits="AS2.subweb" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            width: 197px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="main" class="contentpart">
+        <div class="container">
+            <div id="left" class="submasterleft">
+                <div class="divsitepart">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    <asp:TreeView ID="NavigationTreeView" runat="server" DataSourceID="SiteMapDataSource1" OnSelectedNodeChanged="NavigationTreeView_SelectedNodeChanged" ImageSet="Arrows">
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                        <ParentNodeStyle Font-Bold="False" />
+                        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                </div>
+                <div class="divcalpart">
+                    <div class="calendarbox">
+                        <asp:Calendar runat="server" BackColor="White" DayStyle-HorizontalAlign="Center" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" Width="200px" OnSelectionChanged="Calendar1_SelectionChanged" SelectionMode="DayWeekMonth" OnDayRender="Calendar1_DayRender" ID="Calendar1" SelectedDate="08/18/2017 15:16:52" VisibleDate="2017-08-18">
+                            <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+
+                            <DayStyle HorizontalAlign="Center"></DayStyle>
+
+                            <NextPrevStyle VerticalAlign="Bottom" />
+                            <OtherMonthDayStyle ForeColor="#808080" />
+                            <SelectedDayStyle BackColor="#FFCC00" Font-Bold="True" ForeColor="White" />
+                            <SelectorStyle BackColor="#CCCCCC" />
+                            <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                            <TodayDayStyle BackColor="#CC6600" ForeColor="Black" />
+                            <WeekendDayStyle BackColor="#FFFFCC" />
+                        </asp:Calendar>
+                        <asp:SqlDataSource ProviderName="System.Data.SqlServerCe.4.0" ID="dsEvent" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Events] WHERE ([EventDate] &lt; @EventDate)">
+                            <SelectParameters>
+                                <asp:Parameter DefaultValue="2018/12/12" Name="EventDate" Type="DateTime" />
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                        <asp:Literal ID="displayEvent" runat="server"></asp:Literal>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right" class="submasterright">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+
+</asp:Content>

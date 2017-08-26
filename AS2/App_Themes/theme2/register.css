@@ -1,0 +1,142 @@
+﻿body {
+}
+.regiterblock {
+    background-color: rgba(255,255,255,0.8);
+    -moz-box-shadow: 0 0 20px #f2f5f6;
+    -webkit-box-shadow: 0 0 20px #f2f5f6;
+    box-shadow: 0 0 20px #f2f5f6;
+    padding-top: 30px;
+    width: 900px;
+    margin: 40px auto;
+}
+.regitertext{
+    margin:auto;
+    padding-top:20px;
+    padding-left:30px;
+    width:550px;
+    padding-bottom:20px;
+}
+.registerintroduction{
+    border:double;
+    background-color:transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-top: 30px;
+    width: 900px;
+    margin: 40px auto;
+}
+.sampleRegisterlo {
+    font-family: 'Arial Rounded MT';
+    font-size:3rem;
+    padding-left: 70px;
+    padding-bottom:10px;
+
+}
+.pageintroduction{
+    padding-left:10px;
+    margin-left:10px;
+}
+p {
+    margin-left: 6rem;
+    margin-top:10px;
+    color:black;
+    font-size:large;
+}
+.submasterleft {
+    float: left;
+    width: 22%;
+    
+}
+.submasterright {
+    float: left;
+    width: 77%;
+    
+}
+.contentpart{
+    margin-top:100px;
+}
+.divsitepart {
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 10px #f2f5f6;
+    -webkit-box-shadow: 0 0 10px #f2f5f6;
+    box-shadow: 0 0 10px #f2f5f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.divcalpart {
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 10px #f2f5f6;
+    -webkit-box-shadow: 0 0 10px #f2f5f6;
+    box-shadow: 0 0 10px #f2f5f6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.calendarbox {
+    margin: 10px auto;
+    height: 270px;
+    width: 200px;
+}
+.wenzipart{
+    font-size:2.1rem;
+    
+}
+.boxpart {
+    height: 40px;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 1.9rem;
+    border: 1px solid;
+}
+.tiaojianju{
+    padding-top:10px;
+}
+.buttonpart{
+    height:40px;
+    width:350px;
+    border:double;
+    background-color:transparent;
+
+}
+.buttonpart1 {
+    height: 40px;
+    width: 80px;
+    border: double;
+    background-color: transparent;
+}
+.buttonpart2 {
+    height: 40px;
+    margin-top: 20px;
+    width: 267px;
+    border: double;
+    background-color: transparent;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-top: 60px !important;
+}
+.searchinpurp {
+    
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 4px;
+}
+.searchinpurp1 {
+    
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 10px;
+}
+.searchinpurp2 {
+    
+    
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 4px;
+}
+.serchdiv{
+    width:400px;
+    margin:10px auto;
+}

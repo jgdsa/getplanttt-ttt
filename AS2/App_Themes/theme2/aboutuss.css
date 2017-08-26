@@ -1,0 +1,210 @@
+﻿.waihostory{
+    height:700px;
+    width:890px;
+    padding-left:30px
+}
+.waihostory1 {
+    height: 700px;
+    width: 890px;
+    padding-left: 40px
+}
+.seconhostory {
+    height:670px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 15px #f2f5f6;
+    -webkit-box-shadow: 0 0 15px #f2f5f6;
+    box-shadow: 0 0 15px #f2f5f6;
+}
+.thridhostory {
+    height: 80px;
+    padding-top:25px;
+}
+
+.thridhostoryy {
+    height: 70px;
+}
+.thridhostoryt {
+    width: 506px;
+    height: 400px;
+    padding-top: 50px;
+    margin: 0px auto;
+}
+.companyname {
+    margin: 40px auto;
+    font-size: 40px;
+    font-style: initial;
+    padding-left: 20px;
+    color: black;
+    font-weight: 400;
+    
+}
+.companyname1 {
+    margin: 30px auto;
+    font-size: 40px;
+    font-style: initial;
+    padding-left: 30px;
+    color: black;
+    font-weight: 400;
+}
+.companyhost{
+    margin-left:18px !important;
+    margin-top:19px;
+    font-family:Arial;
+    font-size:17px;
+}
+.companyhostis {
+    margin-left: 18px !important;
+    margin-top: 51px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight:600;
+}
+element.style {
+    color: #e86b6b !important;
+}
+.companyhost1 {
+    margin-left: 30px;
+    font-size:16px;
+    margin-bottom:10px;
+    margin-top:3px;
+}
+.companyhostqus {
+    margin-left: 30px;
+    font-weight:600;
+    margin-bottom:2px;
+    margin-top:15px;
+    padding-top:10px;
+    font-family:'Bell MT';
+    font-size:21px;
+}
+.companyhostqus1 {
+    margin-left: 30px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-top: 25px;
+    padding-top: 10px;
+    font-family: 'Bell MT';
+    font-size: 21px;
+}
+.thridhostory1{
+    width:506px;
+    height:400px;
+    padding-top:80px;
+    margin:30px auto;
+}
+.contpart{
+    margin:auto;
+    width:740px;
+}
+.linkcenter{
+    width:230px;
+    margin:auto;
+}
+.GridViewRowStyle td:hover, .GridViewAlternatingRowStyle td:hover {
+    background-color: darkgrey;
+    color: rgba(255,255,255,0.7);
+    transition: ease-in 350ms;
+}
+#navigationmenu a.level1 {
+    display: none;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: transparent !important;
+}
+.showpart{
+    margin-left:20px;
+    margin-top:10px;
+}
+.tablepart{
+    margin-top:10px;
+}
+.picshowfs{
+    padding-left:80px;
+    float:left;
+    margin-top:50px;
+}
+.flowerintroduc {
+    padding-left: 10px;
+    margin-left: 30px;
+    float: left;
+    height: 450px;
+    width: 40%;
+    margin-top: 50px;
+    border-bottom:2px dashed;
+}
+.tablebody {
+    font-family: Arial;
+    font-size: 16px;
+    border-color: transparent;
+}
+.flowertitle{
+    font-family:'Agency FB';
+    color:black;
+    font-size:27px;
+    border-bottom: 2px dashed;
+}
+.tableno{
+    border-color:transparent;
+}
+tbody {
+    
+}
+.sitemappart{
+    width:200px;
+    margin:60px auto;
+    border:1px dashed;
+}
+.waihostorycont {
+    height: 800px;
+    width: 890px;
+    padding-left: 40px
+}
+
+.seconhostorycont {
+    height: 770px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 15px #f2f5f6;
+    -webkit-box-shadow: 0 0 15px #f2f5f6;
+    box-shadow: 0 0 15px #f2f5f6;
+}
+
+.thridhostorycont {
+    height: 70px;
+}
+.waihostorydoc {
+    height: 11740px;
+    width: 890px;
+    padding-left: 40px
+}
+
+.seconhostorydoc {
+    height: 11740px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 15px #f2f5f6;
+    -webkit-box-shadow: 0 0 15px #f2f5f6;
+    box-shadow: 0 0 15px #f2f5f6;
+}
+
+.thridhostorydoc {
+    height: 70px;
+}
+.waihostorycontact {
+    height: 860px;
+    width: 890px;
+    padding-left: 40px
+}
+
+.seconhostorycontact {
+    height: 860px;
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.7);
+    -moz-box-shadow: 0 0 15px #f2f5f6;
+    -webkit-box-shadow: 0 0 15px #f2f5f6;
+    box-shadow: 0 0 15px #f2f5f6;
+}

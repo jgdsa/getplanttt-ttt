@@ -1,0 +1,104 @@
+﻿
+.backofblue {
+    background-color: rgba(255,255,255,0.7);
+    margin-top:10px;
+    height:90px;
+}
+body {
+    font-size: 2.1rem !important;
+
+}
+
+.NavigationBG {
+   
+    height: 90px;
+    float: right;
+}
+
+.Navigationlogo {
+    padding-left: 25px;
+    float: left;
+    height: 85px;
+}
+
+.logonav {
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.navigationmenue {
+    height: 46px !important;
+    width: auto !important;
+}
+
+.backofmian {
+    height:20px;
+}
+.backofmianleft {
+    height:20px;
+    float:left;
+}
+.backofmianright {
+    height:20px;
+    float:right;
+
+}
+.staticMenuItemStyle {
+    color: #000000 !important;
+}
+
+.staticHoverStyle {
+    background-color:white;
+}
+
+.bodybackground1 {
+    background-color: #DDDDDD;
+}
+
+.cd-slider-navooo {
+    margin-top: 30px;
+    height: 80px;
+    text-align: center;
+}
+
+.dynamicMenuItemStyle {
+    color: black;
+    padding-left: 20px;
+    text-align:right;
+}
+
+.staticMenuItemSelectedStyle {
+    color: black;
+}
+#navigationmenu a.popout {
+    background-image: url(/WebResource.axd?d=YAYach_zykzn7tRotFpEUjilE3L06mE3n3QDHiRsXIbQY4E6m_1yKff8A_sNRrSfWQI2otUve052jx4Zg8cl7fI5WAPzBIzCZo6Ydc_wvSo1&t=636372225358410600);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 16px !important; 
+}
+
+.footer-mid{
+    margin:0 auto ;
+    width:500px;
+}
+.footer-mid1 {
+    margin: 0 auto !important;
+    width: 250px !important;
+    padding-bottom:20px;
+}
+.nomargging{
+    margin-left:0px !important;
+}
+element.style {
+    font-weight:normal!important;
+    font-style: normal;
+    text-decoration: none;
+}
+.loginregiter{
+    height:20px;
+}
+
+.selected {
+    background-color: rgba(255,255,255,0.4);
+}

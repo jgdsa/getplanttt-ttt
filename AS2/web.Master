@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="web.master.cs" Inherits="AS2.web" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title></title>
+
+<%--    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/homepart.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+    <link rel="stylesheet" type="text/css" href="css/loginn.css" />
+    <link rel="stylesheet" type="text/css" href="css/aboutuss.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="fonts-awesome-4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/dessert.css" />--%>
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="Script/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+    <%--    <script src="Script/jquery.magnific-popup.min.js" type="text/javascript"></script>--%>
+    <%--    <script src="Script/jquery-1.11.3.min.js" type="text/javascript"></script>--%>
+    <%--    <script src="Script/bootstrap.min.js" type="text/javascript"></script>--%>
+    <%--    <script src="Script/hero-slider-main.js" type="text/javascript"></script>--%>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Script/prettify.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bodybackground1">
+
+    <form id="form1" runat="server">
+        <div class="cd-slider-navooo">
+            <div class="container">
+                <div class="loginregiter">
+                    <div class="backofmianright">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" LogoutAction="RedirectToLoginPage" LogoutText="Logout" LoginText="Login" />
+                        <asp:LoginName ID="LoginName1" runat="server" Font-Bold="False" ForeColor="#d44457" Font-Italic="False" Font-Overline="False" />
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/webpages/register.aspx">Register</asp:HyperLink>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                Welcome!
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="backofblue">
+                    <div class="Navigationlogo">
+                        <asp:Image ImageUrl="~/images/final.png" CssClass="logonav" ID="Image1" runat="server" />
+                    </div>
+                    <div class="NavigationBG">
+                        <asp:Menu ID="navigationmenu" CssClass="navigationmenue "
+                            StaticDisplayLevels="2" DynamicHorizontalOffset="1"
+                            StaticSubMenuIndent="21px" MaximumDynamicDisplayLevels="4"
+                            Orientation="Horizontal" StaticMenuItemStyle-HorizontalPadding="18px"
+                            StaticMenuItemStyle-VerticalPadding="29px"
+                            DataSourceID="MenuSource"
+                            runat="server" Height="100px" OnMenuItemClick="NavigationMenu_MenuItemClick" Width="1248px">
+
+                            <StaticMenuStyle />
+                            <StaticSelectedStyle />
+                            <StaticMenuItemStyle CssClass="staticMenuItemStyle" />
+                            <StaticHoverStyle BackColor="#d3d3d3" ForeColor="White" />
+                            <DynamicHoverStyle ForeColor="White" />
+                            <StaticSelectedStyle />
+                            <DynamicMenuItemStyle CssClass="dynamicMenuItemStyle" />
+                            <DynamicHoverStyle CssClass="nav-linkhover" />
+                            <DynamicMenuStyle CssClass="menuItem" />
+                            <DynamicSelectedStyle CssClass="menuItemSelected" />
+
+                            <DataBindings>
+                                <asp:MenuItemBinding DataMember="siteMapNode"
+                                    NavigateUrlField="url" TextField="title"
+                                    ToolTipField="description" />
+                            </DataBindings>
+
+                        </asp:Menu>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="backofmian">
+                    <div class="backofmianleft">
+                        <asp:SiteMapPath ID="SiteMapPath1" runat="server" ForeColor="#fb5e8f"></asp:SiteMapPath>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <asp:SiteMapDataSource ID="MenuSource" runat="server" StartFromCurrentNode="false" ShowStartingNode="true" />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+            <asp:DropDownList ID="DropDownList1" runat="server" >
+                <asp:ListItem>theme1</asp:ListItem>
+                <asp:ListItem>theme2</asp:ListItem>
+            </asp:DropDownList>
+            <asp:Button ID="Button1" runat="server" Text="CT" OnClick="Button1_Click" />
+        </div>
+        <div class="container">
+
+            <footer class="tm-footer">
+
+                <div class="footer-mid1">
+                    <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                    <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="footer-mid">
+                    <p class="tm-copyright-text nomargging">
+                        <a rel="nofollow" href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm" class="tm-footer-link" target="_parent">Monash Course Disclaimer</a>
+                        <br />
+                        <a href="mailto:ysun0002@student.monash.edu" class="tm-footer-link" target="_parent">Server Webmaster</a>
+                        <br />
+                        <a href="mailto:ysun0002@student.monash.edu" class="tm-footer-link" target="_parent">Email Page Author</a>
+                        <br />
+                        Copyright &copy; 2017 Company 
+                <br />
+                        Acknowledgements: <a rel="nofollow" href="https://en.wikipedia.org/wiki/Main_Page" class="tm-footer-link" target="_parent">Wikipedia &nbsp</a>
+                        <a rel="nofollow" href="https://www.douban.com/note/195642492/" class="tm-footer-link" target="_parent">Mota &nbsp</a>
+                        <a rel="nofollow" href="https://www.douban.com/" class="tm-footer-link" target="_parent">Douban &nbsp</a>
+                        <a rel="nofollow" href="http://www.templatemo.com/page/1" class="tm-footer-link" target="_parent">Templatemo</a>
+                    </p>
+                </div>
+
+            </footer>
+
+        </div>
+
+
+        <asp:HyperLink ID="codeHyperLink" runat="server" NavigateUrl="~/showcode.aspx?as=web.Master&cs=subweb.Master" Target="_blank">ShowCode</asp:HyperLink>
+        <%--<asp:Button ID="ShowcodeLinkButton2" runat="server" Text="SC" OnClick="ShowcodeLinkButton_Click1" />--%>
+    </form>
+
+</body>
+</html>
